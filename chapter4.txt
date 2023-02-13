@@ -1,0 +1,5 @@
+The Heroku CLI keeps itself and its plugins (except linked plugins) up to date automatically, unless you installed the Debian/Ubuntu package or used npm install.
+
+When you run a heroku command, a background process checks for the latest available version of the CLI. If a new version is found, it’s downloaded and stored in ~/.local/share/heroku/client. This background check happens at most once every 4 hours.
+
+The heroku binary checks for an up-to-date client in ~/.local/share/heroku/client before using the originally installed client.
